@@ -1,0 +1,507 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    border: none;
+    max-width: 100%;
+}
+
+body{
+    background-color: #f5f5f5;
+    background-image: url('../images/body_bg.jpg');
+    background-position: center center;
+    background-repeat: repeat-x;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.3;
+    font-family: "Arial", sans-serif;
+
+    color: #555;
+}
+
+a{
+    color: #9dc5f0;
+}
+
+a:hover{
+    color: #9dc5f0; 
+    text-decoration: none;
+}
+
+.karkas{
+    width: 755px;
+    margin: 0 auto;
+    /*background-color: #f3f3f3;*/
+    /* border: 1px solid yellow; */
+}
+
+.header{
+    padding: 30px 0 0 0;
+    /*background: #ffffff;*/
+    margin-bottom: 20px;
+    /* border: 2px solid red; */
+}
+
+.logo{
+    margin: 0 auto 20px auto;
+    display: block;
+    border: 5px solid black;
+    /* border-radius: 20px 40px; Первая цифра-верхний левый и нижний правый, вторая- верхний правый и нижний левый угол  */
+    /* border-radius: 20px 40px 100px; Здесь третья цифра это нижний правый угол */
+    /* border-radius: 20px 35px 45px 60px;  */
+    /* border-top-left-radius: 90px 60px;
+    border-top-right-radius: 20px 60px;
+    border-bottom-left-radius: 50px 80px;
+    border-bottom-right-radius: 50px 20px; */
+    border-radius: 50px 50px 50px 50px / 70px 70px 70px 70px;
+}
+
+.header__menu{
+    margin-top: 15px;
+  
+}
+
+.menu{
+    list-style: none;
+    font-size: 14px;
+    font-weight: bold;
+    border-left: 1px solid #f3f3f3;
+    border-right: 1px solid #f3f3f3;
+    border-top: 1px solid #f3f3f3;
+    border-bottom: 3px solid #9dc5f0;
+    overflow: hidden;
+
+}
+
+.menu li{
+    float: left;
+    border-left: 1px solid #f3f3f3;
+    padding: 8px 25px;
+    /*border: 1px solid red;*/
+
+}
+
+.menu li:first-child{
+    float: left;
+    border-left: none;
+    padding: 8px 25px;
+    /*border: 1px solid red;*/
+
+}
+
+.menu li a{
+    color: #5f5d67;
+    text-decoration: none;
+
+}
+
+.menu li a:hover{
+    text-decoration: underline;
+    color: #3EAAF3;
+
+}
+
+.main-content{
+    overflow: hidden;
+    margin-bottom: 50px;
+
+}
+
+.lower-content{
+    margin: 0 auto;
+
+}
+
+.lower-content h1{
+    /* margin: 0 auto; */
+    text-align: center;
+}
+
+.lower-content-inner{
+    margin: 30px auto;
+    height: 300px;
+    width: 500px;
+    padding: 20px;
+    background: url('../images/levis.jpg') no-repeat;
+    background-size: 400px;
+    border: 20px solid rgba(0, 0, 0, 0.5);
+    background-origin:border-box;
+    background-clip: border-box;  /*обрезаем фоновое изображение по padding, либо границей, либо размером блока */
+}
+
+.lower-inner2{
+    margin: 0 auto;
+    width: 600px;
+    height: 350px;
+    /* border: 20px solid rgba(0, 0, 0, 0.2); */
+    background:
+     url('../images/png.png') no-repeat,
+     url('../images/png2.png') no-repeat,
+     url('../images/lake.jpg') no-repeat;
+    background-size: 40%,20%,100%;
+    background-position: right 150px bottom 50px, right 50px  bottom 150px, center;
+
+    
+
+}
+
+.lower-inner3{
+    margin: 0 auto;
+    width: 600px;
+    height: 350px;
+    /* border: 20px solid rgba(0, 0, 0, 0.2); */
+    background:
+     url('../images/png.png') no-repeat;
+    background-size: 40%;
+    background-repeat: repeat;
+    background-repeat: no-repeat round; /* В данномслучае указываем повторение по горизонтали и округление числа повторений по вертикали*/
+
+    
+
+}
+
+.lower-inner4{
+    margin: 0 auto;
+    border: 20px solid rgba(0, 0, 0, 0.1);
+    /* border-image-source: ; */
+    padding: 30px;
+    width: 600px;
+    height: 350px;
+    /* border: 20px solid rgba(0, 0, 0, 0.2); */
+    background: url('../images/lake.jpg') no-repeat;
+    background-size: cover;
+    background-origin: padding-box;
+    background-clip: padding-box;
+ 
+}
+
+.div-opacity{
+    margin: 20px auto;
+    border: 5px solid black;
+    /* padding: 30px; */
+    width: 600px;
+    opacity: 0.5; /*при таком способе задания прозрачности элементы внутри блока тоже прозрачны*/
+    height: 350px;
+    /* border: 20px solid rgba(0, 0, 0, 0.2); */
+    background: url('../images/lake.jpg') no-repeat;
+    background-size: cover;
+    /* background-origin: padding-box; */
+    /* background-clip: padding-box; */
+ 
+}
+
+.div-opacity2{
+    margin: 20px auto;
+    border: 10px solid black;
+    /* padding: 20px; */
+    width: 600px;
+    height: 450px;
+    /* border: 20px solid rgba(0, 0, 0, 0.2); */
+   background-color: rgba(255,255,255,0.4) /*при таком способе задания прозрачности, элементы внутри остаются непрозрачными*/
+
+}
+
+.div-opacity3 img{
+    display: block;
+    width: 100%;
+}
+
+.div-opacity3{
+    position: relative;
+    margin: 20px auto;
+    /* border: 10px solid black; */
+    width: 600px;
+    height: 450px;
+    /* border: 20px solid rgba(0, 0, 0, 0.2); */
+   background-color: rgba(255,255,255,0.4) /*при таком способе задания прозрачности, элементы внутри остаются непрозрачными*/
+    
+}
+
+.div-opacity3:before {
+    content:"";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+}
+
+.shadows{
+    width: 100%;
+    margin: 0 auto;
+    border: 2px solid black;
+    background-color: lightgrey;
+}
+
+.shadows h1{
+    text-align: center;
+    font-size: 36px;
+    text-shadow: 3px 3px 3px blue;
+    color: #000;
+}
+
+.button, .button-two, .button-three{
+    width: 200px;
+    padding: 20px 0;
+    font-size: 16px;
+    display: block;
+    margin: 50px auto;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    background-color: #00f;
+}
+
+.button{
+    box-shadow: 0 0 0 10px; /*внутренняя или внешняя тень, свдиг по х, свдиг по y, размытие в пикселях, сдвиг как паддинг(можно отрицательный), цвет*/
+}
+
+.button-two{
+    background-color: #f00;
+    box-shadow:
+     -10px 0 10px -5px #0f0,
+     10px 0 10px -5px #ff0,
+     0 5px 10px 5px #fff,
+     0 -5px 10px 5px #000;
+
+}
+
+.button-three{
+    background-color: #0f0;
+    color: #000;
+    box-shadow: inset  0 0 0 5px rgba(255, 255, 0, 0.6); 
+}
+
+
+
+.main-content h1{
+    font: normal 24px 'Times New Roman';
+    margin-bottom: 20px;
+    
+}
+
+.main-content h2{
+    font: normal 20px 'Times New Roman';
+    margin-bottom: 20px;
+    
+}
+
+.main-content h3{
+    font: normal 18px 'Times New Roman';
+    margin-bottom: 20px;
+    
+}
+
+.main-content p{
+    margin-bottom: 20px;
+
+}
+
+.content-left{
+    background: #fff;
+    /* padding: 30px; */
+    width: 420px;
+    float: left;
+    padding: 30px 30px 32000px 30px;
+    margin-bottom: -32000px;
+}
+
+.inner-leftcontent{
+    margin: 0 auto;
+    width: 400px;
+    height: 216px;
+    /* border: 1px solid blue; */
+    background: #bbb url("../images/fon.jpg") no-repeat;
+    /* background-size: auto 180px;  указали высоту сами, ширина подстравивается автоматически*/
+    /* background-size: 400px; меняем только один параметр, второй изменятся пропорционально */
+    /* background-size: contain; фон заполняет блок частично в зависимости от совпадения одной из сторон с размером блока */
+    /* background-size: cover; изображение растягивается*/
+    
+
+}
+
+.content-left h1{
+    font: 8px;
+
+}
+
+.right-bar{
+    background: #fff;
+    width: 230px;
+    padding: 30px 10px 32000px 25px;
+    margin-bottom: -32000px;
+    float: right;
+    /* font-size: 28px; */
+    font: normal 14px 'Trebuchet MS', Arial, sans-serif;
+}
+
+.right-bar h1{
+    font-family:Georgia, "Times New Roman", Times, serif;
+}
+
+.footer{
+    padding: 15px 0 20px 30px;
+    color: #a1a0a7;
+}
+
+.gradient{
+    margin: 0 auto;
+    width: 100%;
+    height: 600px;
+    border: 1px solid black;
+}
+
+/* Препроцесор SCSS */
+
+/*.menu {*/
+
+/*    & li{*/
+
+/*        &:first-child{*/
+
+/*        }*/
+
+/*        & a{*/
+
+/*            &:hover{*/
+
+/*            }*/
+/*        }*/
+/*    }*/
+/*}*/
+
+/* Препроцесор SCSS и ВЭМ */
+
+/*.menu {*/
+/*    list-style: none;*/
+/*    font-size: 14px;*/
+/*    font-weight: bold;*/
+/*    border-left: 1px solid #f3f3f3;*/
+/*    border-right: 1px solid #f3f3f3;*/
+/*    border-top: 1px solid #f3f3f3;*/
+/*    border-bottom: 3px solid #9dc5f0;*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*.menu__item {*/
+/*    float: left;*/
+/*    border-left: 1px solid #f3f3f3;*/
+/*    padding: 8px 25px;*/
+
+/*    &:first-child{*/
+/*        border-left: none;*/
+/*    }*/
+/*}*/
+
+/*.menu__link{*/
+/*    color: #5f5d67;*/
+/*    text-decoration: none;*/
+
+/*    &:hover{*/
+/*        text-decoration: underline;*/
+/*        color: #3EAAF3;*/
+/*    }*/
+/*}*/
+
+
+/* ВЭМ */
+
+/*.menu {*/
+/*    list-style: none;*/
+/*    font-size: 14px;*/
+/*    font-weight: bold;*/
+/*    border-left: 1px solid #f3f3f3;*/
+/*    border-right: 1px solid #f3f3f3;*/
+/*    border-top: 1px solid #f3f3f3;*/
+/*    border-bottom: 3px solid #9dc5f0;*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*.menu__item {*/
+/*    float: left;*/
+/*    border-left: 1px solid #f3f3f3;*/
+/*    padding: 8px 25px;*/
+/*}*/
+
+/*.menu__item:first-child{*/
+/*    border-left: none;*/
+/*}*/
+
+/*.menu__link{*/
+/*    color: #5f5d67;*/
+/*    text-decoration: none;*/
+/*}*/
+
+/*.menu__link:hover{*/
+/*    text-decoration: underline;*/
+/*    color: #3EAAF3;*/
+/*}*/
+
+
+/* десктоп ферст */
+
+/*@media (max-width:1000px) {*/
+/*    body{*/
+/*        background-color: red;*/
+/*    }*/
+/*}*/
+
+/*@media (max-width:600px) {*/
+/*    body{*/
+/*        background-color: blue;*/
+/*    }*/
+/*}*/
+/*@media (max-width:320px) {*/
+/*    body{*/
+/*        background-color: olivedrab;*/
+/*    }*/
+/*}*/
+
+
+/* Мобаил ферст */
+
+/*@media (min-width:320px) {*/
+/*    body{*/
+/*        background-color: olivedrab;*/
+/*    }*/
+/*}*/
+
+
+/*@media (min-width:600px) {*/
+/*    body{*/
+/*        background-color: blue;*/
+/*    }*/
+/*}*/
+
+/*@media (min-width:1000px)  {*/
+/*    body{*/
+/*        background-color: red;*/
+/*    }*/
+/*}*/
+
+
+/* и */
+/*@media (min-width:320px) and (max-width:600px) {*/
+/*    body{*/
+/*         background-color: red;*/
+/*    }*/
+/*}*/
+
+/* или */
+/*@media (min-width:320px), (min-width:600px) {*/
+/*    body{*/
+/*         background-color: red;*/
+/*    }*/
+/*}*/
+
+
+
+
+
+
+
+
+

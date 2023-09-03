@@ -1,0 +1,30 @@
+.menu {
+  list-style: none;
+  font-size: 14px;
+  font-weight: bold;
+  border-left: 1px solid #f3f3f3;
+  border-right: 1px solid #f3f3f3;
+  border-top: 1px solid #f3f3f3;
+  border-bottom: 3px solid #9dc5f0;
+  overflow: hidden;
+}
+
+.menu__item {
+  float: left;
+  border-left: 1px solid #f3f3f3;
+  padding: 8px 25px;
+
+  &:first-child{
+    border-left: none;
+  }
+}
+
+.menu__link{
+  color: #5f5d67;
+  text-decoration: none;
+
+  &:hover{
+    text-decoration: underline;
+    color: #3EAAF3;
+  }
+}
