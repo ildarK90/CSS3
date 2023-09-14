@@ -21,28 +21,41 @@ body {
     border: 1px solid #000;
     padding: 10px 20px;
     box-sizing: border-box;
-    margin: 20px;
+    /* margin: 20px; */
     /* height: 70px; */
+    flex-basis: 300px;
+    /* flex-grow: 0; */
+    flex-shrink: 0; /*по умолчанию 1, если 0 то не будут ужиматься */
 }
 
 .container-element:first-child {
-    font-size: 26px;
-    align-self: flex-start;
+    flex-shrink: 3;
+    /* font-size: 26px; */
+    /* align-self: flex-start; */
     /* height: 70px; */
     /* margin: auto; */
-    margin-right: auto;
+    /* margin-right: auto; */
     order: 0;                                           /*По умолчанию 0*/
+    /* width: 200px; */
+    flex-shrink: 3;
+    /* height: 600px; */
+    /* flex-basis: 600px; */
+    /* flex-grow: 0;  По умолчанию 0 */
+
 }
 
 .container-element:last-child {
-    align-self: flex-end;
-    margin-left: auto;
+    /* align-self: flex-end; */
+    /* margin-left: auto; */
+    /* width: 200px; */
     /* order: -1; */
+    /* flex-grow: 0; */
+    flex-shrink: 2;
 }
 
 .container-element:nth-child(2) {
-    align-self: center;
-    margin-right: auto;
+    /* align-self: center; */
+    /* margin-right: auto; */
    
 }
 /* 
@@ -62,7 +75,7 @@ body {
 .container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     /* justify-content: space-between; */
     /* height: 300px; */
     /* align-items: stretch; */
