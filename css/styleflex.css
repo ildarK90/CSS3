@@ -25,9 +25,46 @@ body {
     /* height: 70px; */
 }
 
+.container-element:first-child {
+    font-size: 26px;
+    align-self: flex-start;
+    /* height: 70px; */
+    /* margin: auto; */
+    margin-right: auto;
+    order: 0;                                           /*По умолчанию 0*/
+}
+
+.container-element:last-child {
+    align-self: flex-end;
+    margin-left: auto;
+    /* order: -1; */
+}
+
+.container-element:nth-child(2) {
+    align-self: center;
+    margin-right: auto;
+   
+}
+/* 
+.container-element:nth-child(3) {
+    align-self: baseline;
+    
+}
+
+.container-element:nth-child(4) {
+    align-self: stretch;
+    /* order: -1;
+ } */
+
+
+
+
 .container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    /* justify-content: space-between; */
+    /* height: 300px; */
+    /* align-items: stretch; */
+    /* align-content: flex-start;  */
 }
