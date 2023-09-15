@@ -855,8 +855,161 @@ input:-ms-input-placeholder {
 
 
 
+    /*Трансформации 3D*/
 
-             /*МЕДИАЗПРОСЫ*/
+
+.dcontainer {
+    margin-bottom: 200px;
+    border: 2px solid black;
+}
+.transform-3d {
+    perspective: 500px;
+    perspective-origin: 50% 50%;
+}
+[class^='dblock'] {
+    width: 150px;
+    height: 150px;
+    margin: 100px auto;
+    border: 5px solid #000;
+    background-color: green;
+}
+
+.dblock1 {
+    background-color: green;
+    /*transform: translateZ(50px);*/
+    /*transform: translate3d(0, 0, 50px);*/
+    transform: rotateX(30deg);
+
+}
+
+
+.dblock2 {
+    background-color: red;
+    /*transform: rotateY(0deg) rotateZ(20deg) rotateX(45deg);*/
+    /*transform: rotateY(50deg) translateZ(50px);*/
+    /*transform: scaleZ(1) translateZ(150px);*/
+    transform: rotateY(45deg);
+    transform-origin: 10px 10px 20px;
+}
+
+.dblock3 {
+    background-color: blue;
+    transform: scale3d(1,1,1.5) translateZ(100px);
+
+}
+                /*ПЛАВНЫЕ ПЕРЕХОДЫ*/
+
+.smooth-container {
+    max-width: 1300px;
+    margin: 140px auto;
+    /*border: 1px solid yellow;*/
+}
+
+.smoothblock {
+    width: 200px;
+    height: 50px;
+    margin: 20px 0;
+    background-color: green;
+    /*transition-duration: 1s, 3s;*/
+    /*transition-property: width,background-color;*/
+
+    transition: width 1s ease-in, background-color 3s ease-in;
+
+}
+
+/*.smoothblock:hover {*/
+/*    width: 500px;*/
+/*    background-color: lightblue;*/
+/*    !*height: 70px;*!*/
+/*}*/
+
+.smooth-container:hover .smoothblock {
+    width: 500px;
+    background-color: #00b3ff;
+    /*transition-timing-function: ease-in;*/
+}
+
+.smoothblock1 {
+    transition-timing-function: ease-in;
+}
+.smoothblock2 {
+    /*transition-delay: 100ms;*/
+    transition-timing-function: ease-out;
+}
+
+.smoothblock3 {
+    /*transition-delay: 200ms;*/
+    /*transition-timing-function: ease-in-out;*/
+    transition-timing-function: cubic-bezier(.07,.18,.99,.1);
+
+}
+
+            /*АНИМАЦИИ*/
+
+.button {
+    width: 150px;
+    font-size: 16px;
+    color: black;
+    background-color: yellow;
+    line-height: 16px;
+    padding: 20px 0;
+    display: block;
+    margin: 50px auto;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 5px 15px 2px black;
+}
+
+.button {
+    animation-name: btn-animate2;
+    animation-duration: 4s;
+}
+
+.button2 {
+    animation-name: btn-animate3;
+    background-color: green;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+@keyframes btn-animate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes btn-animate2 {
+    25% {
+        transform: rotate(70deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    75% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes btn-animate3 {
+    0% {
+        transform: rotate(0deg) translateY(0);
+    }
+    33% {
+        transform: rotate(-15deg) translateY(40px);
+    }
+    50% {
+        width: 250px;
+        color: white;
+        font-size: 20px;
+    }
+    66% {
+        transform: rotate(15deg);
+    }
+}
+            /*МЕДИАЗПРОСЫ*/
 
 
 @media all and (max-width: 768px) {     /* all для всех устройств*/
