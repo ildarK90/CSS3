@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    /* grid-template-columns: 150px minmax(100px, 1fr) minmax(200px,300px) 150px;
+    grid-template-rows: minmax(100px, 1fr) 150px 200px; */
+    grid-template-columns: [left] 200px repeat(3, [content] 1fr) [right] 200px;
+    grid-template-rows: [top] 100px [middle] 100px [bottom] 100px;
+    grid-gap: 20px 20px; 
+    /* grid-column-gap: 20px;
+    grid-row-gap: 10px; */
+}
+
+
+
+.grid__element {
+    background-color: rgba(14, 167, 238, 0.911);
+    color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+.grid__element {
+    /* grid-column-start: 2;
+    grid-row-start: 2;
+    grid-column-end: -1;
+    grid-row-end: -1; */
+/* 
+    grid-column: 2 / -1;
+    grid-row: 2 / -1; */
+
+    /* grid-area: 2 / 2 / -1 / -1  сокращенная запись row start / columnt start / row end/ column end */
+    /* grid-column-start: left;
+    grid-column-end: content 3;
+    grid-row-start: top;
+    grid-row-end: bottom 2; */
+
+    /* grid-column-start: 2;
+    grid-column-end: span 3;
+    grid-row-start: 1;
+    grid-row-end: span 2; */
+}
